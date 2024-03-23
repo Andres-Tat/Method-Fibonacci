@@ -26,21 +26,21 @@
 
 */
 
-function fibonacciGenerator(n) {
+function fibonacciGenerator(n) {                     'создаем функцию'
   let output = [];
 
-  if (n === 1) {
+  if (n === 1) {                                 'создаем условия, при которых будет выполняться наша функция, использую IF, ELSE'
     output = [0];
   } else if (n === 2) {
     output = [0, 1];
   } else {
     output = [0, 1];
-    for (let i = 2; i < n; i++) {
-      output.push(output[output.length - 2] + output[output.length - 1]);
+    for (let i = 2; i < n; i++) {              'использую метод FOR в функции'
+      output.push(output[output.length - 2] + output[output.length - 1]);   'добавляю элемент в конец массива, использую метод PUSH'
     }
   }
-  return output;
+  return output;                                'возвращаю результат'
 }
 
-let res = fibonacciGenerator(10);
-console.log(res);
+let res = fibonacciGenerator(10);               'объявляю переменную и присваиваю ей значение функции'
+console.log(res);                               'вывожу результат функции'
